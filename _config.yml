@@ -1,0 +1,5 @@
+title: Writing from Within Dreadmere
+description: Fantasy tales and adventures
+theme: minima
+plugins:
+  - jekyll-feed
