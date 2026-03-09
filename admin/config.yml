@@ -2,17 +2,3 @@ backend:
   name: github
   repo: dreadmerewrites/dreadmerewrites.github.io
   branch: main
-  base_url: https://decap-proxy.netlify.app
-
-media_folder: "assets/images/uploads"
-
-collections:
-  - name: "posts"
-    label: "Stories"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Story", name: "body", widget: "markdown"}
