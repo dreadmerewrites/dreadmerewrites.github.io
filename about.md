@@ -1,16 +1,8 @@
 ---
-layout: default
-title: About
+layout: page
+title: About the Scrolls
 permalink: /about/
 ---
-
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title">About the Scrolls</h1>
-    <div class="post-divider" aria-hidden="true">— ✦ —</div>
-  </header>
-
-  <div class="post-content">
 
 The Scrolls of Dreadmere is a collection of writings from deep within the realm — fan fiction, original adventures, and chronicles of the worlds that matter most.
 
@@ -31,6 +23,3 @@ The scribe has been writing since before the quill knew how to stop.
 ---
 
 *The Scrolls of Dreadmere is a personal writing archive. All original characters, plots, and worldbuilding belong to their respective authors. Fan fiction is written for love of the source material, not profit.*
-
-  </div>
-</article>
