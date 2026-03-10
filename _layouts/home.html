@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="home">
+
+  <div class="home-intro">
+    {{ content }}
+  </div>
+
+  {% if site.posts.size > 0 %}
+  <section class="scroll-list">
+    <h2 class="scroll-list-title">Latest Writings</h2>
+    <div class="scroll-divider" aria-hidden="true">— ✦ —</div>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li class="post-list-item">
+        <a href="{{ post.url | relative_url }}" class="post-list-link">
+          <span class="post-list-marker" aria-hidden="true">⚔</span>
+          <span class="post-list-title">{{ post.title }}</span>
+          <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%d %b %Y" }}
+          </time>
+        </a>
+        {% if post.excerpt %}
+        <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% else %}
+  <div class="empty-scrolls">
+    <p class="empty-text">The first scroll has yet to be written. The quill awaits.</p>
+  </div>
+  {% endif %}
+
+</div>
