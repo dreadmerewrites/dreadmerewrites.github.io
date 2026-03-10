@@ -1,5 +1,15 @@
-title: Writing from Within Dreadmere
-description: Fantasy tales and adventures
+title: The Scrolls of Dreadmere
+description: "Tales of monsters, heroes, and magic — from deep within the realm."
 theme: minima
+
 plugins:
   - jekyll-feed
+
+minima:
+  skin: dark
+
+author:
+  name: The Scribe of Dreadmere
+
+# No personal info published
+show_excerpts: true
